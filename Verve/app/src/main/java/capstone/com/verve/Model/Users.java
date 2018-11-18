@@ -1,23 +1,11 @@
 package capstone.com.verve.Model;
 
-public class Patient {
+import java.util.Date;
 
-    public String firstname, middlename, lastname, username, mobile, email, address, birthday;
+public class Users {
 
-    public Patient() {
+    public String firstname, middlename, lastname, username, mobile, email, address, birthday, gender, role;
 
-    }
-
-    public Patient(String firstname, String middlename, String lastname, String username, String mobile, String email, String address, String birthday) {
-        this.firstname = firstname;
-        this.middlename = middlename;
-        this.lastname = lastname;
-        this.username = username;
-        this.mobile = mobile;
-        this.email = email;
-        this.address = address;
-        this.birthday = birthday;
-    }
 
     public String getFirstname() {
         return firstname;
@@ -82,4 +70,40 @@ public class Patient {
     public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public Users() {
+
+    }
+
+    public Users(String firstname, String middlename, String lastname, String username,
+                   String mobile, String email, String address, String birthday, String gender, String role) {
+        this.firstname = firstname;
+        this.middlename = middlename;
+        this.lastname = lastname;
+        this.username = username;
+        this.mobile = mobile;
+        this.email = email;
+        this.address = address;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.role = role;
+    }
+
+
 }
